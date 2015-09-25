@@ -1,0 +1,4 @@
+- Đưa form addStore ra giữa
+- Có cần validte tiếng việt lúc nhập password, id hay ko
+- validate id va pass: length, ktu dac biet...
+- Lam jax gọi php check duplicate account

@@ -1,0 +1,930 @@
+﻿*{
+    text-align: center;
+    font-size: 110%;
+}
+a
+{
+	text-decoration:none;
+
+}
+
+button:hover
+{
+    background-color: #ff475a;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.mouse_hover_table:hover
+{
+    background-color: rgba(95, 204, 255, 0.49) !important;
+}
+
+input[type="checkbox"]{
+    /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+}
+
+input{
+    text-align: left;
+}
+
+textarea{
+    text-align: left;
+}
+
+body
+{	
+
+    background-color:#E6E6E6;
+	background-attachment:fixed;
+	font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+	margin:0 auto;
+	padding: 0;
+}
+
+.clear
+{
+	clear:both;
+}
+
+#line
+{
+    background-color:#D0D0D0;
+    /*height:55px;*/
+    border-bottom:1px dashed #C0C0C0 ;
+}
+
+.link{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+#header
+{
+    background-color:cornflowerblue;
+    margin:auto;
+    /*border:1px solid red;*/
+	height:220px;
+	width:800px;
+}
+
+#wrapper
+{
+	background-color:#FFFFFF;
+	margin:0 auto;
+    margin-top: 45px;
+    padding-top: 35px;
+	/*border:1px solid red;*/
+	width:1000px;
+    box-shadow: rgba(0,0,0, 0.2) 0px 0px 8px;
+    text-align: center  ;
+	}
+#menu
+{
+	padding:0 0 0 0px;
+	height:45px;
+    background-color:#0066CC;
+    line-height:45px;
+}
+#menu_ul
+{
+	list-style-type:none;
+}
+	
+#menu_ul a
+{
+    border-right:1px solid #2A88CC;
+	float:left;
+	text-decoration:none;
+    height:45px;
+	color:White;
+    padding: 0 10px 0 10px;
+
+	}
+	
+#menu_ul li
+{
+	display:inline;
+	}
+
+
+	
+#menu_ul a:hover
+{
+	background-color:#FF850A;
+	}
+
+#home_icon
+{
+    margin-top: 10px;
+}
+
+#content
+{
+	margin: 15px;
+    padding: 10px;
+    /*height: 500px;*/
+    text-align: left;
+    background:#F1F1F1 ;
+    box-shadow: rgba(0,0,0, 0.2) 0px 0px 8px;
+	}
+
+#content .tieuDe{
+    margin: 20px 0 40px 0;
+    color: #ff2a28;
+    font-size: 200%;
+}
+
+
+#footer
+{
+	width:980px;
+	background-color:#D0D0D0;
+	margin:0px;
+	padding:10px;
+	text-align:left;
+	font:90%;	
+	}
+
+
+
+
+/* subPage=========================================*/
+
+
+.listNPP
+{
+
+    margin-top: 20px;
+    /*border: solid #00adee 1px;*/
+    padding: 0;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+    box-shadow: rgba(0,0,0, 0.2) 0px 0px 8px;
+    width: 100%;
+    background-color: #d0d0d0;
+}
+
+.listNPP th{
+    background: #0085f8;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -khtml-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius:5px 5px 0px 0px;
+    height: 40px;
+}
+
+.listNPP tr{
+    background-color: #f4f8ee;
+    /*#bac7cc*/
+}
+
+.id_npp_an{
+    display: none;
+}
+
+
+.add_div form{
+    /*width: 85%; !important;*/
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+    display: inline-block;
+
+}
+
+.add_div input{
+    text-align: left !important;
+}
+
+.add_div textarea{
+    text-align: left !important;
+}
+
+.add_div fieldset{
+    background: #26ccc7;
+    text-align: left;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+    box-shadow: rgba(0,0,0, 0.2) 0px 0px 20px;
+}
+
+.hinh_hanghoa{
+    border:2px solid #F0F0F0;
+    width:120px;
+    height:100px;
+}
+
+/*Zoom hinh anh*/
+.img-thumbnail{
+    position: relative;
+    z-index: 0;
+}
+
+.img-thumbnail:hover{
+    background-color: transparent;
+    z-index: 50;
+}
+
+.img-thumbnail span{
+    position: absolute;
+    background-color: #ffffff;
+    padding: 5px;
+    left: -1000px;
+    border: 1px solid #000;
+    visibility: hidden;
+    color: black;
+    text-decoration: none;
+}
+
+.img-thumbnail span img{
+    border-width: 0;
+    padding: 2px;
+}
+
+.img-thumbnail:hover span{
+    visibility: visible;
+    top: -200;
+    left: -100;
+}
+
+.add_div label, button{
+    margin: 5px;
+}
+
+.add_div text{
+    margin-left: 50px;
+}
+
+.add_div legend{
+    padding: 0 10px;
+    text-align: left;
+    color: #CC1625;
+    background-color: #26ccc7;
+}
+
+.add_div{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    float: inherit;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.add_table{
+    font-size: 80%;
+    text-align: left !important;
+}
+.add_table label{
+    font-size: 85%;
+}
+.add_table tr{
+    text-align: left !important;
+}
+.add_table td{
+    text-align: left !important;
+}
+.add_table button{
+    margin: 20px 0;
+}
+
+/*============= form search ===========*/
+.search{
+    float: right;
+}
+
+.search label{
+    color: #0066CC;
+}
+
+.frmSearch{
+    text-align: left;
+    width: 700px;
+    font-size: 90%;
+    margin-top: 10px;
+}
+.frmSearch td{
+    text-align: left;
+    font-size: 95%;
+}
+
+.frmSearch fieldset{
+    border: 1px #CC1625 dashed;
+    color: #000000;
+    background-color: #709ac4;
+}
+
+.frmSearch legend{
+    font-size: 140%;
+    text-align: left;
+    background-color: #709ac4;
+}
+
+.frmSearch table{
+    width: 700;
+}
+
+.frmSearch button{
+    font-size: 80%;
+    margin-top: 15px;
+}
+/*==================== Chi tiết nhập xuất ==============================*/
+
+
+
+.chiTiet_div{
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+    background-color: white;
+    padding: 5px;
+}
+
+.chiTiet_div fieldset{
+    border: 1px #CC1625 dashed;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+    color: #CC1625;
+}
+
+.chiTiet_div legend{
+    text-align: left;
+}
+
+.chiTiet_div table {
+    font-size: 90%;
+}
+
+
+.chiTiet td{
+    text-align: left;
+}
+
+.const_table{
+    width: 200px;
+}
+
+.chiTiet_SP{
+    margin-top: 55px;
+}
+
+/*===============modify=================*/
+
+.m_chiTiet_div{
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.m_chiTiet_div fieldset{
+    border: 1px #0066CC dashed;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+}
+
+.m_chiTiet_div legend{
+    text-align: left;
+    color: #0066CC;
+}
+
+.m_chiTiet_div table {
+    font-size: 80%;
+    background-color: #26ccc7;
+}
+
+.m_chiTiet td{
+    text-align: left;
+}
+
+.m_chiTiet input{
+    text-align: left;
+}
+
+
+.chiTiet_SP{
+    margin-top: 55px;
+}
+
+.m_chitiet{
+    background-color: white;
+    padding: 5px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+}
+
+
+.m_chitiet table{
+    border: 1px #0066CC dashed;
+}
+
+.m_tieuDe{
+    color: #0066CC;
+    font-size: 170%;
+}
+
+
+
+
+.chiTietHoaDon th {
+    background-color: #26ccc7;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -khtml-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius:5px 5px 0px 0px;
+    height: 40px;
+}
+
+/*display chi tiet hoa don*/
+.list_chiTiet{
+    width: 910px;
+}
+
+.list_chiTiet th{
+    background-color: #cc6957;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -khtml-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius:5px 5px 0px 0px;
+    height: 40px;
+}
+.list_chiTiet tr{
+    background-color: #BAC7CC;
+}
+
+.tongTien td{
+    color: #2b4db7;
+    font-weight: bold;
+    padding: 10px 0 10px 0 ;
+}
+
+
+/*
+validate input data*/
+.required{
+    color: #cc0f11;
+    font-size: 80%;
+    text-align: left;
+}
+
+/*
+Thong ke*/
+
+.thongKe_home{
+    -moz-border-radius: 10px 10px 10px 10px;
+    -khtml-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius:10px 10px 10px 10px;
+    text-align: right;
+    margin: 20px auto;
+    box-shadow: rgba(0,0,0, 0.2) 0px 0px 8px;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 700px;
+}
+
+.chiTiet_tke{
+    background-color: #0077b3;
+    color: #ffffff;
+    text-align: right !important;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -khtml-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius:10px 10px 10px 10px;
+    padding: 3px;
+}
+
+.thongKe{
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+    padding: 10px;
+    background-color: #ffffff;
+    text-align: left !important;
+
+}
+
+.thongKe form{
+    text-align: left;
+    font-size: 80%;
+}
+
+.thongKe p{
+    text-align: left;
+}
+
+.thongKe td{
+    text-align: left;
+}
+
+
+.result_tk{
+
+    padding: 10px;
+    box-shadow: blue 0px 0px 8px;
+    background-color: #ffffff;
+    text-align: left !important;
+    margin-top: 15px;
+    background-color: #D0D0D0;
+}
+
+.kq{
+    color: #CC1625;
+}
+
+/*=============================*/
+.add_div_thu form{
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+
+}
+
+.add_div_thu input{
+    text-align: left !important;
+}
+
+.add_div_thu textarea{
+    text-align: left !important;
+}
+
+.add_div_thu fieldset{
+    background: #26ccc7;
+    text-align: left;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+    box-shadow: rgba(0,0,0, 0.2) 0px 0px 20px;
+}
+
+.add_div_thu label, button{
+    margin: 5px;
+}
+
+.add_div_thu text{
+    margin-left: 50px;
+}
+
+.add_div_thu legend{
+    text-align: left;
+    color: #CC1625;
+}
+
+
+.add_table_thu{
+    font-size: 70%;
+    text-align: left !important;
+}
+.add_table_thu tr{
+    text-align: left !important;
+}
+.add_table_thu td{
+    text-align: left !important;
+}
+
+/*=================thu no=====================*/
+
+.thuno td{
+    text-align: left;
+}
+
+.table_thu_no {
+    margin-top: 15px;
+    border: 1px dashed #000000;
+    background-color: #D0D0D0;/*#BAC7CC;*/
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+
+}
+
+.table_thu_no th{
+    padding-left: 10px;
+    font-weight: normal;
+    width: 290px;
+    text-align: left;
+    background-color: #eff8ff;
+   /* background-color:#ffccbe;*/
+}
+
+.table_thu_no td{
+     width: 720px;
+     text-align: left;
+     background-color: #eff8ff;
+ }
+
+.table_thu_no input{
+    margin: 5px;
+}
+
+
+
+/*.thuno_chonkh{
+}
+
+.thuno_chonkh td{
+    text-align: left;
+    background-color:#bac7cc;
+}
+
+.thuno_chonkh th{
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 0px 0px 6px;
+    width: 220px;
+    text-align: left;
+    background-color:#CC6957;
+}*/
+
+/*====================================*/
+
+.ttoan{
+    color: blue;
+    display: none;
+    position: absolute; 
+    top: auto;
+    background-color: #ffffff;
+
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+
+    box-shadow: rgba(0,0,0, 0.2) 0px 0px 8px;
+    height: 160px;
+    opacity: 1 !important;
+    z-index: 100;
+}
+.ttoan a{
+    color: #ffffff;
+    margin: 30px;
+    box-shadow: rgba(0,0,0, 0.2) 0px 0px 8px;
+    background-color: #5458ff;
+    padding: 10px;
+
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+}
+
+#full {
+    display: none; z-index: 99; width: 100%; height:100%;
+    top:0;
+    left:0;background-color: black; opacity: 0.8; position:fixed; overflow: hidden;
+}
+
+/*Phan trang*/
+
+.pagging{
+    text-align: right;
+    padding: 3px;
+    margin: 20px 0 20px 0;
+    background-color: #E6E6E6;
+    float: right;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -khtml-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius:5px 5px 5px 5px;
+}
+
+.chan{
+    background-color: #dcdcdc !important;
+        /*#ecfff2*/
+}
+
+.fix td{
+   padding: 5px;
+}
+
+/*-------------------- login ----------------------*/
+
+#login form{
+    margin-top: 20px;
+    padding: 30px;
+    display: inline-block;
+    background-color: #ffffff;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -khtml-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    box-shadow: #c1c1c1 0px 0px 8px;
+}
+#login label{
+    font-size: 90%;
+}
+
+#login table{
+    text-align: center !important;
+    margin: 0 auto;
+    font-size: 90%;
+    /*border: 1px dashed red;*/
+    padding: 10px;
+
+}
+
+#login td{
+    text-align: left !important;
+    border-radius: 4px;
+}
+#login input{
+    width: 180px;
+    margin-right: 7px;
+}
+#login p{
+    margin: 5px;
+    text-align: left;
+    color: red;
+    font-weight: bold;
+    font-size: 120%;
+}
+#login hr{
+    margin: 15px;
+}
+
+
+/*============= table text-align left  =============*/
+
+.left_align td{
+    text-align: left;
+    color: blue;
+    font-size: 130%;
+    padding-right: 20px !important;
+}
+
+
+
+/*========================= bootstrap dialog =================*/
+
+.align_left{
+    text-align: left;
+    color: blue;
+}
+
+/*========================= end bootstrap dialog =================*/
+.tke_index{
+    /*border: 1px solid red;*/
+    text-align: left !important;
+    margin: 20px 0;
+    padding: 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -khtml-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    box-shadow: #c1c1c1 0px 0px 8px;
+}
+.tke_index p{
+    text-align: left !important;
+}
+.tke_index button{
+    margin: 10px 0;
+}
+
+.tke_index span{
+    color: blue;
+    font-weight: bold;
+}
+
+/*=============== In thu no ======================*/
+
+#inThuNo{
+    background: white;
+    border: 1px solid #000000;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -khtml-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+#inThuNo p{
+    padding: 0;
+    margin: 0;
+}
+
+#inThuNo td{
+    background: white !important;
+}
+
+#inThuNo th{
+    background: white !important;
+}
+
+#header_print{
+    /*border: 1px solid red;*/
+    font-size: 140%;
+    padding: 0;
+    margin: 0;
+}
+
+#header_print p{
+    padding: 0;
+    margin: 0;
+}
+
+.tong_tien{
+    margin: 0 auto !important;
+    font-weight: bold !important;
+    color: #000000 !important;
+    border: 2px double;
+}
+
+.tong_tien td{
+    font-weight: bold !important;
+    color: #000000 !important;
+    text-align: right;
+    width: 200px;
+}
+
+.canh_phai{
+    width: 155px;
+    text-align: right;
+    /*border: 1px solid red;*/
+}
+
+
+#footer_print{
+    /*border: 1px solid red;*/
+    margin: 20px 40px;
+}
+
+#a{
+    float: left;
+    /*border: 1px solid blue;*/
+}
+#b{
+    float: right;
+    /*border: 1px solid blue;*/
+}
+
+
+/*=============== End In thu no ==================*/
+
+/*=============== Confirm message ==================*/
+.confirm_mes{
+    margin: 0 auto;
+    font-size: 95%;
+}
+
+.confirm_mes .cf_mes_td{
+    text-align: right;
+}
+
+
+/*=============== End confirm message ==================*/
+
+
+/* New css for Store Management */
+.content{
+    text-align: center;
+    padding: 10px;
+}
+
+.content .purpose{
+    margin: 20px 0 40px 0;
+    color: #ff2a28;
+    font-size: 150%;
+}
+
+.funtionButton{
+    text-align: left;
+}
+
+.funtionButton button{
+    margin: 10px;
+}
+
+/* Store input form */
+.frmAddStore{
+    padding: 10px;
+    width: 600px;
+    background: #e1fcff;
+    text-align: left;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px ;
+    -webkit-border-radius:6px 6px 6px 6px;
+    box-shadow: rgba(0,0,0, 0.2) 0px 0px 10px;
+}
+
+.edit_store{
+    text-align: center !important;
+    padding: 5px !important;
+}
+
+.changePass{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.changePass a{
+    border: 1px solid red;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -khtml-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    padding: 5;
+}
